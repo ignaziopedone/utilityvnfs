@@ -1,3 +1,5 @@
+if [ ! -z "$1" ]
+then
 if [ $1 == "user" ]
 then
 sudo sh -c 'cat append_user.sh >> /etc/network/interfaces.d/50-cloud-init.cfg'
